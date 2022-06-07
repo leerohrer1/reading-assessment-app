@@ -1,0 +1,43 @@
+{
+  "Level A/B": {
+    "Thinking Within the Text": {
+      "Solving Words": [
+        "Locates known word(s) in text",
+        "Analyzes words from left to right, using knowledge of sound/letter relationships",
+        "Recognizes a few high frequency words",
+        "Locates easy high frequency words in the text"
+      ],
+      "Searching for and Using Information": [
+        "Matches spoken word with printed word",
+        "Moves from left to right when reading",
+        "Searches for and uses information in pictures",
+        "Uses oral language in combination with pointing",
+        "Uses the language structure to learn about the print",
+        "Asks questions to clarify meaning or get information"
+      ],
+      "Monitoring and Correcting": [
+        "Uses word-by-word matching",
+        "Uses prior knowledge to self-correct and self-monitor",
+        "Uses known words to self-monitor and self-correct",
+        "Begins to crosscheck one kind of information against another to monitor and self-correct reading",
+        "Re-reads to self-correct errors or confirm meaning"
+      ],
+      "Summarizing": [
+        "Remembers what the story is about during reading",
+        "Remembers important information from the text",
+        "Remembers information to help understand the end of the story"
+      ],
+      "Maintaining Fluency": [
+        "Notices and uses end punctuation and reflects it in voice",
+        "Points to words and reads at a steady rate without long pauses"
+      ]
+    },
+    "Thinking Beyond the Text": {
+      "Predicting": [],
+      "Making Connections": [],
+      "Synthesizing": [],
+      "Inferring": [],
+      "Analyzing/Critiquing": []
+    }
+  }
+}
