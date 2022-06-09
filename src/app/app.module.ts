@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TestComponent } from './test/test.component';
+import { ChecklistComponent } from './checklist/checklist.component';
 import { GradeLevelComponent } from './grade-level/grade-level.component';
 import { TeacherComponent } from './teacher/teacher.component';
 import { StudentComponent } from './student/student.component';
@@ -14,12 +14,12 @@ import { TeachersClassComponent } from './teachers-class/teachers-class.componen
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent,
     GradeLevelComponent,
     TeacherComponent,
     StudentComponent,
     GroupComponent,
-    TeachersClassComponent
+    TeachersClassComponent,
+    ChecklistComponent
   ],
   imports: [
     BrowserModule,

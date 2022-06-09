@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    
-  </head>
+  <head> </head>
   <body>
-    <h1>School Name</h1>
-    <app-test></app-test>
+    <section class="navigation">
+      <ul>
+        <a class="nav-link" routerLink="/checklists">Checklists</a>
+        <a class="nav-link" routerLink="/class-roster">Class Roster</a>
+        <a class="nav-link" routerLink="/students">Search Students</a>
+      </ul>
+    </section>
+    <section class="banner">
+      <h1 class="banner-text">Golden Knights Elementary</h1>
+      <p class="smaller-banner-text">Mrs. Rohrer's Reading Assessments</p>
+    </section>
+    <section>
+      <router-outlet></router-outlet>
+    </section>
   </body>
 </html>

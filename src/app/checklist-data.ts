@@ -1,4 +1,4 @@
-const TESTS = [
+const CHECKLISTS = [
   {
     id: "Level A/B",
     "Thinking Within the Text": [
@@ -261,4 +261,4 @@ const TESTS = [
   },
 ];
 
-export { TESTS };
+export { CHECKLISTS };
