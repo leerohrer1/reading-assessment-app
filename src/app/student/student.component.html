@@ -3,5 +3,20 @@
   <head> </head>
   <body>
     <h2>Find Student</h2>
+      <p>Search bar to come...!</p>
+    <h2>Select Student From Roster</h2>
+      <ul class="students">
+        <li *ngFor="let student of students">
+            <a (click)="onSelect(student)" class="student">{{student.name}}</a>
+        </li>
+      </ul>
+      <section *ngIf="selectedStudent">
+        <h3>You selected: {{selectedStudent.name}}</h3>
+        <section>Current Reading Level: {{selectedStudent.currentLevel}}</section>
+        <!-- <section>
+          <label for="student-notes">Notes: </label>
+          <input id="student-notes" [(ngModel)]="selectedStudent.notes" placeholder="notes">
+        </section> -->
+      </section>
   </body>
 </html>

@@ -1,5 +1,7 @@
-h2 {
-  color: rgb(52, 52, 52);
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(80, 80, 80);
 }
 
 ul {

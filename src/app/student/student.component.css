@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(80, 80, 80);
+}
+
+ul {
+  color: rgb(80, 80, 80);
+}
+
+a {
+  text-decoration: underline;
+}
+
+a:hover {
+  cursor: pointer;
+  color: gold;
+  font-weight: 900;
+  text-decoration: none;
+}

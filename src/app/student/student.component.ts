@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { STUDENTS } from '../mock-sudent-data';
+import { Student } from '../student';
 
 @Component({
   selector: 'app-student',
@@ -6,6 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./student.component.css']
 })
 export class StudentComponent implements OnInit {
+  students = STUDENTS;
+
+  selectedStudent?: Student;
+
+  onSelect(student:Student): void {
+  this.selectedStudent = student;
+}
 
   constructor() { }
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Checklist } from '../checklist';
-import { CHECKLISTS } from '../checklist-data';
+import { CHECKLISTS } from '../checklist-items';
 
 @Component({
   selector: 'app-checklist',
