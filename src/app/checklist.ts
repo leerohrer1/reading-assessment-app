@@ -1,7 +1,25 @@
-interface Checklist {
-  id: string;
-  'Thinking Within the Text': any;
-  'Thinking Beyond the Text': any;
+interface itemsWithinText {
+  'Solving Words': string[];
+  'Searching for and Using Information': string[];
+  'Monitoring and Correcting': string[];
+  Summarizing: string[];
+  'Maintaining Fluency': string[];
 }
+
+interface itemsBeyondText {
+  Predicting: string[];
+  'Making Connections': string[];
+  Synthesizing: string[];
+  Inferring: string[];
+  'Analyzing/Critiquing': string[];
+}
+
+type Checklist = [
+  {
+    id: string;
+    'Thinking Within the Text': itemsWithinText;
+    'Thinking Beyond the Text': itemsBeyondText;
+  }
+];
 
 export { Checklist };

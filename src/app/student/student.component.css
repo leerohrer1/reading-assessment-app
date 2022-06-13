@@ -8,10 +8,6 @@ ul {
   color: rgb(80, 80, 80);
 }
 
-a {
-  text-decoration: underline;
-}
-
 a:hover {
   cursor: pointer;
   color: gold;

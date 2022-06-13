@@ -1,7 +1,8 @@
+import { Checklist } from "./checklist";
+
 interface Student {
   name: string;
-  currentLevel: string;
-  notes: string;
+  scores: Checklist;
 }
 
 export { Student };
