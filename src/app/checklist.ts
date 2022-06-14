@@ -14,12 +14,10 @@ interface itemsBeyondText {
   'Analyzing/Critiquing': string[];
 }
 
-type Checklist = [
-  {
-    id: string;
-    'Thinking Within the Text': itemsWithinText;
-    'Thinking Beyond the Text': itemsBeyondText;
-  }
-];
+interface Checklist {
+  id: string;
+  'Thinking Within the Text': itemsWithinText;
+  'Thinking Beyond the Text': itemsBeyondText;
+}
 
 export { Checklist };
