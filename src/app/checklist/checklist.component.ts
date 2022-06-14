@@ -10,6 +10,12 @@ import { CHECKLISTS } from '../checklist-items';
 class ChecklistComponent implements OnInit {
   checklists = CHECKLISTS;
 
+  selectedChecklist?: Checklist;
+
+  onSelect(checklist: any): void {
+    this.selectedChecklist = checklist;
+  }
+
   constructor() {}
 
   ngOnInit(): void {}

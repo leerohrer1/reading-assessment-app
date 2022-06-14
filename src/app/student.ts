@@ -2,7 +2,9 @@ import { Checklist } from "./checklist";
 
 interface Student {
   name: string;
-  scores: Checklist;
+  //change scores to "Checklist" type when student data is updated
+  scores: any;
+
 }
 
 export { Student };

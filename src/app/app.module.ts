@@ -8,6 +8,7 @@ import { ChecklistComponent } from './checklist/checklist.component';
 import { StudentComponent } from './student/student.component';
 import { TeachersClassComponent } from './teachers-class/teachers-class.component';
 import { StudentDetailComponent } from './student-detail/student-detail.component';
+import { ChecklistDetailComponent } from './checklist-detail/checklist-detail.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { StudentDetailComponent } from './student-detail/student-detail.componen
     StudentComponent,
     TeachersClassComponent,
     ChecklistComponent,
-    StudentDetailComponent
+    StudentDetailComponent,
+    ChecklistDetailComponent
   ],
   imports: [
     BrowserModule,
