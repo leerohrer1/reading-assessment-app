@@ -9,7 +9,7 @@ import { CHECKLISTS } from '../checklist-items';
 })
 export class ChecklistDetailComponent implements OnInit {
 
-  @Input() checklist?: Checklist; 
+  @Input() checklist?: Checklist;
 
   constructor() { }
 
