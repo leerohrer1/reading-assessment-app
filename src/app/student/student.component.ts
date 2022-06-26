@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { STUDENTS } from '../mock-sudent-data';
 import { Student } from '../student';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-student',
@@ -10,13 +12,13 @@ import { Student } from '../student';
 export class StudentComponent implements OnInit {
   students = STUDENTS;
 
-  selectedStudent?: Student;
+  constructor(private route: ActivatedRoute, private location: Location) {}
 
-  onSelect(student: Student): void {
-    this.selectedStudent = student;
+  ngOnInit(): void {
+    this.getStudent();
   }
 
-  constructor() {}
-
-  ngOnInit(): void {}
+  getStudent(): void {
+    const name = Number(this.route.snapshot.paramMap.get('name'));
+  }
 }

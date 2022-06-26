@@ -7,9 +7,8 @@
     <h2>Select Student From Roster</h2>
       <ul class="students">
         <li *ngFor="let student of students">
-            <a (click)="onSelect(student)" class="student">{{student.name}}</a>
+            <button routerLink="/detail/{{student.name}}" class="student">{{student.name}}</button>
         </li>
       </ul>
-      <app-student-detail [student]="selectedStudent"></app-student-detail>
   </body>
 </html>
