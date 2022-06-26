@@ -1,8 +1,4 @@
 <section *ngIf="student">
   <h3>You selected: {{student.name}}</h3>
-  <section> STUDENT DETAILS TO COME! </section>
-  <!-- <section>
-    <label for="student-notes">Notes: </label>
-    <input id="student-notes" [(ngModel)]="selectedStudent.notes" placeholder="notes">
-  </section> -->
+  <h4>Student Mastery: {{studentScore(student)}}</h4>
 </section>
