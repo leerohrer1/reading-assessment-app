@@ -3,6 +3,7 @@ import { STUDENTS } from '../mock-sudent-data';
 import { Student } from '../student';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
+import { StudentService } from '../student.service';
 
 @Component({
   selector: 'app-student',
@@ -10,15 +11,21 @@ import { Location } from '@angular/common';
   styleUrls: ['./student.component.css'],
 })
 export class StudentComponent implements OnInit {
-  students = STUDENTS;
+  students: Student[] = [];
 
-  constructor(private route: ActivatedRoute, private location: Location) {}
+  constructor(
+    private studentService: StudentService,
+    private route: ActivatedRoute,
+    private location: Location
+  ) {}
 
   ngOnInit(): void {
-    this.getStudent();
+    this.getStudents();
   }
 
-  getStudent(): void {
-    const name = Number(this.route.snapshot.paramMap.get('name'));
+  getStudents(): void {
+    this.studentService
+      .getStudents()
+      .subscribe((students) => (this.students = students));
   }
 }

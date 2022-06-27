@@ -1,51 +1,48 @@
-<!DOCTYPE html>
-<html>
-  <body>
-    <section *ngIf="checklist">
-      <h3>You selected: Checklist {{ checklist.id }}</h3>
-      <p>Below you will see the items on this checklist.</p>
-      <h4>Thinking Within the Text</h4>
-        <h5>Solving Words</h5>
-          <ul>
-            <li *ngFor="let item of checklist['Thinking Within the Text']['Solving Words']">{{item}}</li>
-          </ul>
-        <h5>Searching for and Using Information</h5>
-          <ul>
-            <li *ngFor="let item of checklist['Thinking Within the Text']['Searching for and Using Information']">{{item}}</li>
-          </ul>
-        <h5>Monitoring and Correcting</h5>
-          <ul>
-            <li *ngFor="let item of checklist['Thinking Within the Text']['Monitoring and Correcting']">{{item}}</li>
-          </ul>
-        <h5>Summarizing</h5>
-          <ul>
-            <li *ngFor="let item of checklist['Thinking Within the Text']['Summarizing']">{{item}}</li>
-          </ul>
-        <h5>Maintaining Fluency</h5>
-          <ul>
-            <li *ngFor="let item of checklist['Thinking Within the Text']['Maintaining Fluency']">{{item}}</li>
-          </ul>
-      <h4>Thinking Beyond the Text</h4>
-        <h5>Predicting</h5>
-        <ul>
-          <li *ngFor="let item of checklist['Thinking Beyond the Text']['Predicting']">{{item}}</li>
-        </ul>
-      <h5>Making Connections</h5>
-        <ul>
-          <li *ngFor="let item of checklist['Thinking Beyond the Text']['Making Connections']">{{item}}</li>
-        </ul>
-      <h5>Synthesizing</h5>
-        <ul>
-          <li *ngFor="let item of checklist['Thinking Beyond the Text']['Synthesizing']">{{item}}</li>
-        </ul>
-      <h5>Inferring</h5>
-        <ul>
-          <li *ngFor="let item of checklist['Thinking Beyond the Text']['Inferring']">{{item}}</li>
-        </ul>
-      <h5>Analyzing/Critiquing</h5>
-        <ul>
-          <li *ngFor="let item of checklist['Thinking Beyond the Text']['Analyzing/Critiquing']">{{item}}</li>
-        </ul>
-    </section>
-  </body>
-</html>
+<section *ngIf="checklist">
+  <h3>You selected: Checklist {{ checklist.id }}</h3>
+    <p>Below you will see the items on this checklist.</p>
+  <h4>Thinking Within the Text</h4>
+    <h5>Solving Words</h5>
+      <ul>
+        <li *ngFor="let item of checklist['Thinking Within the Text']['Solving Words']">{{item}}</li>
+      </ul>
+    <h5>Searching for and Using Information</h5>
+      <ul>
+        <li *ngFor="let item of checklist['Thinking Within the Text']['Searching for and Using Information']">{{item}}</li>
+      </ul>
+    <h5>Monitoring and Correcting</h5>
+      <ul>
+        <li *ngFor="let item of checklist['Thinking Within the Text']['Monitoring and Correcting']">{{item}}</li>
+      </ul>
+    <h5>Summarizing</h5>
+      <ul>
+        <li *ngFor="let item of checklist['Thinking Within the Text']['Summarizing']">{{item}}</li>
+      </ul>
+    <h5>Maintaining Fluency</h5>
+      <ul>
+        <li *ngFor="let item of checklist['Thinking Within the Text']['Maintaining Fluency']">{{item}}</li>
+      </ul>
+  <h4>Thinking Beyond the Text</h4>
+    <h5>Predicting</h5>
+    <ul>
+      <li *ngFor="let item of checklist['Thinking Beyond the Text']['Predicting']">{{item}}</li>
+    </ul>
+  <h5>Making Connections</h5>
+    <ul>
+      <li *ngFor="let item of checklist['Thinking Beyond the Text']['Making Connections']">{{item}}</li>
+    </ul>
+  <h5>Synthesizing</h5>
+    <ul>
+      <li *ngFor="let item of checklist['Thinking Beyond the Text']['Synthesizing']">{{item}}</li>
+    </ul>
+  <h5>Inferring</h5>
+    <ul>
+      <li *ngFor="let item of checklist['Thinking Beyond the Text']['Inferring']">{{item}}</li>
+    </ul>
+  <h5>Analyzing/Critiquing</h5>
+    <ul>
+      <li *ngFor="let item of checklist['Thinking Beyond the Text']['Analyzing/Critiquing']">{{item}}</li>
+    </ul>
+</section>
+<button type="button" (click)="goBack()">Go Back</button>
+

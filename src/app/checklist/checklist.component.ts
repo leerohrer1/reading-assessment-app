@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Checklist } from '../checklist';
 import { CHECKLISTS } from '../checklist-items';
+import { ChecklistService } from '../checklist.service';
 
 @Component({
   selector: 'app-checklist',
@@ -8,17 +9,19 @@ import { CHECKLISTS } from '../checklist-items';
   styleUrls: ['./checklist.component.css'],
 })
 class ChecklistComponent implements OnInit {
-  checklists = CHECKLISTS;
+  checklists: Checklist[] = [];
 
-  selectedChecklist?: Checklist;
+  constructor(private checklistService: ChecklistService) {}
 
-  onSelect(checklist: any): void {
-    this.selectedChecklist = checklist;
+  ngOnInit(): void {
+    this.getChecklists();
   }
 
-  constructor() {}
-
-  ngOnInit(): void {}
+  getChecklists(): void {
+    this.checklistService
+      .getChecklists()
+      .subscribe((checklists) => (this.checklists = checklists));
+  }
 }
 
 export { ChecklistComponent };

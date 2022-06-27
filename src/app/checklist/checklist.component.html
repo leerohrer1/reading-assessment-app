@@ -1,8 +1,7 @@
 <h2>Checklists</h2>
   <ul class="tests">
     <li *ngFor="let checklist of checklists">
-      <button type="button" (click)="onSelect(checklist)" class="checklist">{{checklist.id}}
+      <button routerLink="/detail/{{checklist.id}}" class="checklist">{{checklist.id}}
       </button>
     </li>
   </ul>
-  <app-checklist-detail [checklist]="selectedChecklist"></app-checklist-detail>

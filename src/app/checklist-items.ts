@@ -1,6 +1,6 @@
 const CHECKLISTS = [
   {
-    id: 'Level A/B',
+    id: 'Level A and B',
     'Thinking Within the Text': {
       'Solving Words': [
         'Locates known word(s) in text',
@@ -61,7 +61,7 @@ const CHECKLISTS = [
     },
   },
   {
-    id: 'Level C/D',
+    id: 'Level C and D',
     'Thinking Within the Text': {
       'Solving Words': [
         'Locates easy high frequency words in the text',
